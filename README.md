@@ -1,20 +1,12 @@
-# IFA Assignment – Responsive E-commerce Website 🛍️
+# IFA Assignment – Responsive E-commerce Book Selling Website
 
-This is a simple multi-page responsive website built using HTML and CSS for the IFA college assignment.
+This is a simple multi-page responsive website which I built using HTML and CSS for the Texas College IFA assignment.
 
-👉 **[🔗 Live Demo Here](https://young-flame.github.io/IFA-Assignment/)**
+[Live Demo Here](https://young-flame.github.io/IFA-Assignment/)**
 
 ## Pages Included:
-- Home (index.html)
+- Home (index)
 - About
 - Contact
 - Products
-- Cart
-
-## Features:
-- Fully responsive layout 📱🖥️
-- Clean design
-- Linked navigation
-
-Feel free to explore and inspect the code!
 
