@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -306,3 +307,313 @@ footer {
     margin: 0.5rem auto;
   }
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 4rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?technology') no-repeat center center/cover;
+  height: 60vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.info-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.slider {
+  position: relative;
+  max-width: 50%;
+  height: 300px;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide:target {
+  opacity: 1;
+}
+
+.slide:first-child {
+  opacity: 1;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.slider-nav a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.slider-nav a:hover,
+.slider-nav a.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1024px) {
+  .content-container {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .hero {
+    height: 40vh;
+    background-size: cover;
+  }
+
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+
+  .hero-overlay h2 {
+    font-size: 1.5rem;
+  }
+  
+  .info-box {
+    padding: 1.5rem;
+  }
+  
+  .sidebar {
+    padding: 1rem;
+  }
+  
+  .slider {
+    height: 300px;
+    margin: 1.5rem auto;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  .nav-links {
+    gap: 0.5rem;
+  }
+  
+  .nav-links li a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  
+  .hero {
+    height: 35vh;
+  }
+  
+  .hero-overlay {
+    padding: 1rem;
+  }
+  
+  .hero-overlay h2 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+  
+  .content-container {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  
+  .info-box {
+    padding: 1rem;
+  }
+  
+  .sidebar {
+    padding: 1rem;
+  }
+  
+  .slider {
+    height: 250px;
+    margin: 1rem auto;
+  }
+  
+  footer {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Very small screens (320px and below) */
+@media (max-width: 320px) {
+  .hero-overlay h2 {
+    font-size: 1rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 0.8rem;
+  }
+  
+  .info-box h2 {
+    font-size: 1.2rem;
+  }
+  
+  .sidebar h3 {
+    font-size: 1rem;
+  }
+  
+  .slider {
+    height: 200px;
+    margin: 0.5rem auto;
+  }
+}
+>>>>>>> 13503a752a12f1963740cce16f0bea3edb710aef
